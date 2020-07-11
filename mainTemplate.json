@@ -40,17 +40,22 @@
                 "description": "License type to use."
             }
         },
-		"ImageResourceGroup": {
-			"type": "string",
+		"galleryName": {
+            "type": "string",
 			"metadata": {
-				"description": "The name of the Resource Group containing the Image of the captured VM."
-			}
-		},
-		"ImageName": {
-			"type": "string",
-			"metadata": {
-				"description": "The name of the Image this VM instance will be created from."
-			}
+				"description": "Name of the Shared Image Gallery."
+            }
+        },
+        "galleryImageDefinitionName": {
+            "type": "string",
+            "metadata": {
+                "description": "Name of the Image Definition."
+            }
+        },
+        "galleryImageVersionName": {
+            "type": "string",
+            "metadata": {
+                "description": "Name of the Image Version - should follow <MajorVersion>.<MinorVersion>.<Patch>."
 		},
         "vmSize": {
             "type": "string",
@@ -516,11 +521,14 @@
                     "interfaceRefLan": {
                         "value": "[reference('SettingUpInterfaceLan','2019-08-01').outputs.interfaceRef.value]"
                     },
-					"ImageResourceGroup": {
-						"value": "[parameters('ImageResourceGroup')]"
+					"galleryName": {
+						"value": "[parameters('galleryName')]"
 					},
-					"ImageName": {
-						"value": "[parameters('ImageName')]"
+					"galleryImageDefinitionName": {
+						"value": "[parameters('galleryImageDefinitionName')]"
+					},
+					"galleryImageVersionName": {
+						"value": "[parameters('galleryImageVersionName')]"
 					},
                     "location": {
                         "value": "[parameters('location')]"
