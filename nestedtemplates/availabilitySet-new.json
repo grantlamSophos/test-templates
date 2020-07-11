@@ -20,7 +20,6 @@
             "location": "[parameters('location')]",
             "properties": {
                 "platformFaultDomainCount": 2
-                "platformFaultDomainCount": "[if(contains(variables('regionsDomain3'), parameters('location')), 3, 2)]"
             },
             "sku": {
                 "name": "Aligned"
