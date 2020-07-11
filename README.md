@@ -10,9 +10,7 @@ Deployment via template
 
 1) Press the appropriate deployment button and enter your Azure credentials when prompted.
 
-[![Deploy to Azure](https://azuredeploy.net/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fiaasteamtemplates%2Fxg-azure%2Fcustom-image%2FmainTemplate.json)
-
-[![Deploy to Azure Gov](https://azuredeploy.net/AzureGov.png)](https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fiaasteamtemplates%2Fxg-azure%2Fcustom-image%2FmainTemplate.json)
+[![Deploy to Azure](https://azuredeploy.net/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FgrantlamSophos%2Ftest-templates%2FSharedImageDeployment%2FmainTemplate.json)
 
 2) Take a look on the example values for template parameters in `mainTemplateParameters.json`.
 
