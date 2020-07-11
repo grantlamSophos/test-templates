@@ -1,5 +1,5 @@
 # xg-azure
-This template uses a captured image on Azure to deploy Sophos XG firewall to Azure
+This template uses a shared gallery image on Azure to deploy Sophos XG firewall to Azure
 
 Deploying
 =========
