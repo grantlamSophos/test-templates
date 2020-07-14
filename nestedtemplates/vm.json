@@ -26,23 +26,8 @@
 		"interfaceRefLan": {
 			"type": "string"
 		},
-		"galleryName": {
-			"type": "string",
-			"metadata": {
-				"description": "Name of the Shared Image Gallery."
-			}
-		},
-		"galleryImageDefinitionName": {
-			"type": "string",
-			"metadata": {
-				"description": "Name of the Image Definition."
-			}
-		},
-		"galleryImageVersionName": {
-			"type": "string",
-			"metadata": {
-				"description": "Name of the Image Version - should follow <MajorVersion>.<MinorVersion>.<Patch>."
-			}
+		"ImageResourceID": {
+			"type": "string"
 		},
 		"location": {
 			"type": "string"
@@ -52,7 +37,7 @@
 		"imagePublisher": "sophos",
 		"imageOffer": "sophos-xg",
 		"adminUsername": "azureuser",
-		"managedImageId": "[resourceId('Microsoft.Compute/galleries/images/versions', parameters('galleryName'), parameters('galleryImageDefinitionName'), parameters('galleryImageVersionName'))]"
+		"managedImageId": "[parameters('ImageResourceID')]"
 	},
 	"resources": [{
 		"apiVersion": "2019-07-01",
